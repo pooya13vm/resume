@@ -1,0 +1,269 @@
+*,
+*:before *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url(../images/80.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: content-box;
+}
+.site {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+h1 {
+  margin-bottom: 0;
+  margin-top: 5%;
+}
+.menu {
+  grid-area: menu;
+  position: fixed;
+  top: 0;
+  width: 90px;
+  background: #30303067;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#menu-right{
+  right: 0;
+}
+#menu-left{
+  left: 0;
+}
+.menu ul {
+  list-style: none;
+  margin: 0px;
+  width: 100%;
+  position: relative;
+  padding: 0;
+  z-index: 1;
+}
+.menu ul li {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu ul span {
+  border-radius: 50px;
+  font-size: 25pt;
+  width: 80px;
+  height: 70px;
+  margin: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  color: #333;
+}
+.fa{
+  color: #454545;
+}
+#menu-left ul .goo-index,
+#menu-right ul .goo-index
+{
+  width: 80px;
+  height: 70px;
+  background: #e7e6e6;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  transition: all 1s ease;
+}
+#menu-left ul .goo-index {
+  left: 10px;
+  border-radius: 100px 0px 0px 100px;
+}
+#menu-right ul .goo-index{
+  right: 10px;
+  border-radius: 0px 100px 100px 0px;
+}
+a{
+  text-decoration: none;
+}
+.content {
+  grid-area: content;
+  width: calc(100% - 160px);
+  height: max-content;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.screen {
+  display: none;
+  opacity: 0;
+}
+.visible {
+  transition: all 1.5s ease;
+  opacity: 1;
+  position: absolute;
+  display: block;
+  align-content: center;
+  width: 80%;
+}
+/* first screen */
+#name {
+  font-family: "Aclonica", sans-serif;
+  animation: fadeIn;
+  animation-duration: 2s;
+  position: relative;
+  text-align: left;
+  margin-left: 10%;
+  font-size: 2.2rem;
+  margin-bottom: 0;
+  color:#c5c4c4
+}
+#slogan {
+  text-align: left;
+  margin-left: 24%;
+  font-family: "Great Vibes", cursive;
+  font-size: 1.5rem;
+  margin-top: 0;
+  color: 	#FFD700;
+  margin-bottom: 34px;
+  animation: fadeIn;
+  animation-duration: 3s;
+}
+#total-pic {
+  text-align: right;
+}
+#myPic {
+  border-radius: 160px;
+  height: 25%;
+  z-index: 2;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  margin-right: 25px;
+  filter: grayscale(100%);
+  animation: fadeIn;
+  animation-duration: 2s;
+}
+#discriptionTxt {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 0;
+  color:#e7e6e6;
+  width: 60%;
+  margin-top: 20%;
+  margin-left: 10%;
+  line-height: 2rem;
+  font-family: 'Bebas Neue', cursive;
+  word-spacing: 4px;
+  animation: fadeIn;
+  animation-duration: 4s;
+}
+.title{
+  text-align: center;
+  color: #dbdbdb;
+  animation: fadeIn;
+  animation-duration: 2s;
+  font-family: 'Bebas Neue', cursive;
+  color:#FFD700;
+  text-decoration: underline;
+  
+}
+#second-page {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  animation: fadeIn;
+  animation-duration: 4s;
+  margin-top: 10%;
+}
+.item {
+  display: flex;
+  align-items: center;
+  margin: 15px;
+  background-color: #505050;
+  border-radius: 5px;
+  width: 260px;
+}
+.icon-pic {
+  width: 2rem;
+  height: 2rem;
+  background-color: #505050;
+  margin-right: 5px;
+  border-right: 5px solid ;
+  border-right-color: #FFD700;
+  filter: grayscale(100%);
+}
+.skill {
+  font-family: "Odibee Sans", cursive;
+  font-size: 1.2rem;
+  margin: 5px;
+}
+
+#tirth-page {
+  margin: 5%;
+  font-family: 'Bebas Neue', cursive;
+  animation: fadeIn;
+  animation-duration: 4s;
+}
+.ex-list {
+  padding: 1px;
+  font-size: 1rem;
+  list-style: circle;
+  color: #dbdbdb;
+  word-spacing: 3px;
+}
+.exTitle{
+  font-size: 1.2rem;
+}
+.exContent{
+  margin: 0.5rem;
+}
+
+/* forth screen */
+#forth-page{
+  margin-top: 5%;
+}
+.cer-img{
+  width: 20%;
+}
+figcaption{
+  color: #c5c4c4;
+}
+.fig-overlay{
+  text-align: center;
+}
+.hidden{
+  display: none;
+}
+.show{
+  display: block;
+  position: absolute;
+  width: 85%;
+  height: 90%;
+  background-color: rgba(51, 51, 51, 0.637);
+}
+.cer-img-overlay{
+  text-align: center;
+  width: 70%;
+  max-height: 90%;
+  margin: 2% 10% 0 15%;
+}
+.fa-window-close{
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-left: 90%;
+  color: #e7e6e6;
+  cursor: pointer;
+}
+
