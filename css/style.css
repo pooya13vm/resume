@@ -115,6 +115,7 @@ a{
   display: block;
   align-content: center;
   width: 80%;
+  height: 100vh;
 }
 /* first screen */
 #name {
@@ -176,7 +177,17 @@ a{
   font-family: 'Bebas Neue', cursive;
   color:#FFD700;
   text-decoration: underline;
-  
+  }
+.resume-download-text{
+  color: #FFD700;
+  text-decoration: underline;
+  font-size: 1rem;
+  text-decoration:overline;
+}
+.resume-download-text:hover {
+  color: #ff4;
+  font-size: 1.2rem;
+  transition: all 1s linear; 
 }
 #second-page {
   display: flex;
@@ -210,7 +221,25 @@ a{
   margin: 5px;
   color:#e7e6e6;
 }
-
+.app-part{
+  position: relative;
+}
+.app-down-title {
+  color: #e7e6e6;
+  text-decoration: underline;
+}
+.app-down-item{
+  margin: 50;
+}
+.app-title {
+  color: #e7e6e6;
+}
+.app-down-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 350px;
+}
 #tirth-page {
   margin: 5%;
   font-family: 'Bebas Neue', cursive;
