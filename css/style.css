@@ -36,10 +36,10 @@ h1 {
   justify-content: center;
   align-items: center;
 }
-#menu-right{
+#menu-right {
   right: 0;
 }
-#menu-left{
+#menu-left {
   left: 0;
 }
 .menu ul {
@@ -71,12 +71,11 @@ h1 {
   transition: all 0.5s ease;
   color: #333;
 }
-.fa{
+.fa {
   color: #454545;
 }
 #menu-left ul .goo-index,
-#menu-right ul .goo-index
-{
+#menu-right ul .goo-index {
   width: 80px;
   height: 70px;
   background: #e7e6e6;
@@ -89,11 +88,11 @@ h1 {
   left: 10px;
   border-radius: 100px 0px 0px 100px;
 }
-#menu-right ul .goo-index{
+#menu-right ul .goo-index {
   right: 10px;
   border-radius: 0px 100px 100px 0px;
 }
-a{
+a {
   text-decoration: none;
 }
 .content {
@@ -127,7 +126,7 @@ a{
   margin-left: 10%;
   font-size: 2.2rem;
   margin-bottom: 0;
-  color:#c5c4c4
+  color: #c5c4c4;
 }
 #slogan {
   text-align: left;
@@ -135,7 +134,7 @@ a{
   font-family: "Great Vibes", cursive;
   font-size: 1.5rem;
   margin-top: 0;
-  color: 	#FFD700;
+  color: #ffd700;
   margin-bottom: 34px;
   animation: fadeIn;
   animation-duration: 3s;
@@ -157,37 +156,40 @@ a{
 }
 #discriptionTxt {
   font-size: 1.3rem;
-  text-align: center;
+  /* text-align: center; */
   margin-bottom: 0;
-  color:#e7e6e6;
+  color: #e7e6e6;
   width: 60%;
   margin-top: 20%;
   margin-left: 10%;
   line-height: 2rem;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   word-spacing: 4px;
   animation: fadeIn;
   animation-duration: 4s;
 }
-.title{
+.developer-title {
+  height: max-content;
+}
+.title {
   text-align: center;
   color: #dbdbdb;
   animation: fadeIn;
   animation-duration: 2s;
-  font-family: 'Bebas Neue', cursive;
-  color:#FFD700;
+  font-family: "Bebas Neue", cursive;
+  color: #ffd700;
   text-decoration: underline;
-  }
-.resume-download-text{
-  color: #FFD700;
+}
+.resume-download-text {
+  color: #ffd700;
   text-decoration: underline;
-  font-size: 1rem;
-  text-decoration:overline;
+  /* font-size: 1rem; */
+  text-decoration: overline;
 }
 .resume-download-text:hover {
   color: #ff4;
   font-size: 1.2rem;
-  transition: all 1s linear; 
+  transition: all 1s linear;
 }
 #second-page {
   display: flex;
@@ -211,30 +213,30 @@ a{
   height: 2rem;
   background-color: #505050;
   margin-right: 5px;
-  border-right: 5px solid ;
-  border-right-color: #FFD700;
+  border-right: 5px solid;
+  border-right-color: #ffd700;
   filter: grayscale(100%);
 }
 .skill {
   font-family: "Odibee Sans", cursive;
   font-size: 1.2rem;
   margin: 5px;
-  color:#e7e6e6;
+  color: #e7e6e6;
 }
-.app-part{
+.app-part {
   position: relative;
 }
 .app-down-title {
   color: #e7e6e6;
   text-decoration: underline;
 }
-.app-down-item{
+.app-down-item {
   margin: 50;
 }
 .app-title {
   color: #e7e6e6;
 }
-.app-down-container{
+.app-down-container {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -242,7 +244,7 @@ a{
 }
 #tirth-page {
   margin: 5%;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   animation: fadeIn;
   animation-duration: 4s;
 }
@@ -253,43 +255,46 @@ a{
   color: #dbdbdb;
   word-spacing: 3px;
 }
-.exTitle{
+.exTitle {
   font-size: 1.2rem;
 }
-.exContent{
+.exContent {
   margin: 0.5rem;
 }
 
 /* forth screen */
-#forth-page{
+#forth-page {
   margin-top: 5%;
 }
-.cer-img{
+.cer-img {
   width: 20%;
 }
-figcaption{
+.cer-img:hover {
+  cursor: pointer;
+}
+figcaption {
   color: #c5c4c4;
 }
-.fig-overlay{
+.fig-overlay {
   text-align: center;
 }
-.hidden{
+.hidden {
   display: none;
 }
-.show{
+.show {
   display: block;
   position: absolute;
   width: 85%;
   height: 90%;
   background-color: rgba(51, 51, 51, 0.637);
 }
-.cer-img-overlay{
+.cer-img-overlay {
   text-align: center;
   width: 70%;
   max-height: 90%;
   margin: 2% 10% 0 15%;
 }
-.fa-window-close{
+.fa-window-close {
   font-size: 2rem;
   margin-top: 20px;
   margin-left: 90%;
