@@ -1,6 +1,8 @@
 let goIndexL = document.getElementById("go-indexL");
 let goIndexR = document.querySelector("#go-indexR");
 let overlay = document.querySelector(".overlay");
+let mbaOverlay = document.getElementById("MBA");
+let typeOverlay = document.getElementById("TypeScript");
 let hoverEnterR = (index) => {
   goIndexR.style.top = 110 * index + "px";
 };
@@ -16,11 +18,21 @@ let hoverEnterL = (index) => {
   }
 };
 
-let showOverlay = () => {
-  overlay.classList.remove("hidden");
-  overlay.classList.add("show");
+let showOverlay = (param) => {
+  if (param === 1) {
+    mbaOverlay.classList.remove("hidden");
+    mbaOverlay.classList.add("show");
+  } else if (param === 2) {
+    typeOverlay.classList.remove("hidden");
+    typeOverlay.classList.add("show");
+  }
 };
-let hideOverlay = () => {
-  overlay.classList.remove("show");
-  overlay.classList.add("hidden");
+let hideOverlay = (param) => {
+  if (param === 1) {
+    mbaOverlay.classList.remove("show");
+    mbaOverlay.classList.add("hidden");
+  } else if (param === 2) {
+    typeOverlay.classList.remove("show");
+    typeOverlay.classList.add("hidden");
+  }
 };

@@ -260,14 +260,23 @@
                 src="./images/mba-cer.jpg"
                 alt="mba certificate"
                 class="cer-img"
-                onclick="showOverlay()"
+                onclick="showOverlay(1)"
               />
               <figcaption>MBA certificate in persian</figcaption>
             </figure>
+            <figure>
+              <img
+                src="./images/UC.jpg"
+                alt="mba certificate"
+                class="cer-img"
+                onclick="showOverlay(2)"
+              />
+              <figcaption>Type script certification</figcaption>
+            </figure>
           </div>
         </div>
-        <div class="overlay hidden">
-          <i class="fa fa-window-close" onclick="hideOverlay()"></i>
+        <div class="overlay hidden" id="MBA">
+          <i class="fa fa-window-close" onclick="hideOverlay(1)"></i>
           <figure>
             <img
               src="./images/mba-cer.jpg"
@@ -276,6 +285,19 @@
             />
             <figcaption class="fig-overlay">
               MBA certificate in persian
+            </figcaption>
+          </figure>
+        </div>
+        <div class="overlay hidden" id="TypeScript">
+          <i class="fa fa-window-close" onclick="hideOverlay(2)"></i>
+          <figure>
+            <img
+              src="./images/UC.jpg"
+              alt="mba certificate"
+              class="cer-img-overlay"
+            />
+            <figcaption class="fig-overlay">
+              Type script certification
             </figcaption>
           </figure>
         </div>
